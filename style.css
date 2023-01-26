@@ -1,0 +1,191 @@
+/* font-family: 'LCD', sans-serif;
+font-family: 'LCD2', sans-serif;
+font-family: 'LCDMono2', sans-serif;
+font-family: 'LCDMono', sans-serif;
+font-family: 'Digitalism', sans-serif;
+ */
+ @font-face {
+    font-family: 'LCD';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCD'), url('https://fonts.cdnfonts.com/s/71639/LCD-N___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCD'), url('https://fonts.cdnfonts.com/s/71639/LCD-U___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD';
+    font-style: normal;
+    font-weight: 300;
+    src: local('LCD'), url('https://fonts.cdnfonts.com/s/71639/LCD-L___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD';
+    font-style: normal;
+    font-weight: 700;
+    src: local('LCD'), url('https://fonts.cdnfonts.com/s/71639/LCD-BOLD.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD2';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCD2'), url('https://fonts.cdnfonts.com/s/71639/LCD2N___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono2';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCDMono2'), url('https://fonts.cdnfonts.com/s/71639/LCDM2N__.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCDMono'), url('https://fonts.cdnfonts.com/s/71639/LCDMN___.woff') format('woff');
+}
+@font-face {
+    font-family: 'Digitalism';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Digitalism'), url('https://fonts.cdnfonts.com/s/71639/digitalism.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD2';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCD2'), url('https://fonts.cdnfonts.com/s/71639/LCD2U___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono2';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCDMono2'), url('https://fonts.cdnfonts.com/s/71639/LCDM2U__.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LCDMono'), url('https://fonts.cdnfonts.com/s/71639/LCDMU___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD2';
+    font-style: normal;
+    font-weight: 300;
+    src: local('LCD2'), url('https://fonts.cdnfonts.com/s/71639/LCD2L___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono2';
+    font-style: normal;
+    font-weight: 300;
+    src: local('LCDMono2'), url('https://fonts.cdnfonts.com/s/71639/LCDM2L__.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono';
+    font-style: normal;
+    font-weight: 300;
+    src: local('LCDMono'), url('https://fonts.cdnfonts.com/s/71639/LCDML___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCD2';
+    font-style: normal;
+    font-weight: 700;
+    src: local('LCD2'), url('https://fonts.cdnfonts.com/s/71639/LCD2B___.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono2';
+    font-style: normal;
+    font-weight: 700;
+    src: local('LCDMono2'), url('https://fonts.cdnfonts.com/s/71639/LCDM2B__.woff') format('woff');
+}
+@font-face {
+    font-family: 'LCDMono';
+    font-style: normal;
+    font-weight: 700;
+    src: local('LCDMono'), url('https://fonts.cdnfonts.com/s/71639/LCDMB___.woff') format('woff');
+}
+body{
+    background-color: rgba(0, 29, 29, 1);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 65, 65);
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    
+}
+span#time,#overlaytime{
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    font-size: 50px;
+    font-family: 'LCD2', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+#overlaytime{
+    color: rgba(110, 110, 110, 0.3);
+}
+#time{
+    position: absolute;
+    color: rgb(255, 0, 0);
+}
+button{
+    padding: 5px 20px;
+    font-family: 'Digitalism', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 100px;
+    background-color: rgb(1, 65, 65);
+    color: #fff;
+    border: 2px solid wheat;
+    border-radius: 5px;
+}
+ul{
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+li{
+    width: 50%;
+    border-radius: 10px;
+    align-self: center;
+    height: 15px;
+    font-family: 'Digitalism', sans-serif;
+    color: wheat;
+    letter-spacing: 3px;
+    background-color: rgb(1, 65, 65);
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button#stop{
+    border: red 2px solid;
+}
+button#start{
+    border: 2px solid greenyellow;
+}
